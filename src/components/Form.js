@@ -1,7 +1,9 @@
 import React from "react";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-export const Form = ({ setVoucherData }) => {
+export const Form = ({ setVoucherData, setmodeldata, printDiv }) => {
   const [Voucher, setFormVoucherData] = useState({
     Date: "",
     Name: "",
@@ -11,12 +13,22 @@ export const Form = ({ setVoucherData }) => {
     Hours: 0,
   });
 
+  const [checked, setChecked] = React.useState(false);
+
+  const handleChange = () => {
+    setChecked(!checked);
+  };
+
   function changeVoucherData(e) {
     setFormVoucherData({ ...Voucher, [e.target.name]: e.target.value });
   }
 
   function submitDataHandler() {
-    setVoucherData(Voucher);
+    if (checked) {
+      setVoucherData(Voucher);
+    } else {
+      toast.error("team and condtion");
+    }
   }
 
   return (
@@ -67,7 +79,27 @@ export const Form = ({ setVoucherData }) => {
           value={Voucher.Hours}
           onChange={changeVoucherData}
         />
-        <button onClick={submitDataHandler}>Submit</button>
+        <div className="left1">
+          <input
+            className="checkbox"
+            type="checkbox"
+            checked={checked}
+            onChange={handleChange}
+          />
+          <p>
+            By clicking here, I state that I have read and understood the{" "}
+            <a onClick={setmodeldata}>terms and conditions</a> .
+          </p>
+        </div>
+        <br />
+        <button className="btn-submit" onClick={submitDataHandler}>
+          Submit
+        </button>
+        <button className="btn-submit" onClick={printDiv}>
+          Print
+        </button>
+
+        <ToastContainer />
       </div>
     </>
   );

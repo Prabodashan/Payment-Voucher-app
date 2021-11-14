@@ -25,6 +25,13 @@
 .height {
   height: 300px;
 }
+
+.height1 {
+  height: 150px;
+}
+.height2 {
+  height: 75px;
+}
 .Vmain {
   padding: 1% 5%;
 }

@@ -34,7 +34,7 @@ textarea {
   width: 75%;
   background-color: rgb(255, 255, 255);
 }
-button {
+.btn-submit {
   font-size: 2rem;
   background-color: #4caf50;
   color: #000000;
@@ -42,8 +42,38 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease-in;
+  padding: 10px;
+  margin: 0 20px;
+  width: 175px;
 }
 
-button:hover {
+.btn-submit:hover {
   color: #ffffff;
+}
+
+hr {
+  border: #000000 solid 1px;
+}
+.left1 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+a:hover {
+  color: #000000;
 }
