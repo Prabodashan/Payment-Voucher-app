@@ -1,0 +1,71 @@
+.hdr {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+.width {
+  width: 100%;
+}
+
+.height {
+  height: 300px;
+}
+.Vmain {
+  padding: 1% 5%;
+}
+
+.padding {
+  padding: 20px 0;
+}
+.paddingtop {
+  padding-top: 20px;
+}
+.paddingtleft {
+  padding: 0 5.5%;
+}
+
+.floatright {
+  float: right;
+}
+.floatleft {
+  float: left;
+}
+
+.tbl {
+  table-layout: fixed;
+}
+.divtext {
+  font-size: 1.1rem;
+}
+.tablet,
+.tablet > tbody > tr > th {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: black solid 1px;
+  margin: 0 10px;
+}
+.dis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
