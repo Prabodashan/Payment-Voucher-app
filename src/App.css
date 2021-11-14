@@ -36,10 +36,14 @@ textarea {
 }
 button {
   font-size: 2rem;
-  background-color: transparent;
+  background-color: #4caf50;
   color: #000000;
   border: black solid 1px;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease-in;
+}
+
+button:hover {
+  color: #ffffff;
 }
